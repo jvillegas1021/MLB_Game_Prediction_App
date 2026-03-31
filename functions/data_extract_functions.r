@@ -2,14 +2,14 @@
 pitcher_data_practice <- function() {
 
 con <- dbConnect(
-    RPostgres::Postgres(),
-    dbname   = "neondb",
-    host     = "ep-crimson-forest-ahw3nquq-pooler.c-3.us-east-1.aws.neon.tech",  # Neon gives you this
-    port     = 5432,
-    user     = "neondb_owner",
-    password = "npg_gW6jAT5xvnbc",
-    sslmode  = "require"   # Neon requires SSL
-    )
+  RPostgres::Postgres(),
+  host = Sys.getenv("DB_HOST"),
+  dbname = Sys.getenv("DB_NAME"),
+  user = Sys.getenv("DB_USER"),
+  password = Sys.getenv("DB_PASSWORD"),
+  port = as.integer(Sys.getenv("DB_PORT")),
+  sslmode = Sys.getenv("DB_SSLMODE")
+)
 
 query <- ('select
   *
@@ -27,14 +27,14 @@ return(pitcher_df)
 pitcher_data_for_benchmark <- function() {
 
 con <- dbConnect(
-    RPostgres::Postgres(),
-    dbname   = "neondb",
-    host     = "ep-crimson-forest-ahw3nquq-pooler.c-3.us-east-1.aws.neon.tech",  # Neon gives you this
-    port     = 5432,
-    user     = "neondb_owner",
-    password = "npg_gW6jAT5xvnbc",
-    sslmode  = "require"   # Neon requires SSL
-    )
+  RPostgres::Postgres(),
+  host = Sys.getenv("DB_HOST"),
+  dbname = Sys.getenv("DB_NAME"),
+  user = Sys.getenv("DB_USER"),
+  password = Sys.getenv("DB_PASSWORD"),
+  port = as.integer(Sys.getenv("DB_PORT")),
+  sslmode = Sys.getenv("DB_SSLMODE")
+)
 
 query <- ('select
   *
@@ -51,14 +51,14 @@ return(pitcher_df)
 team_batting_data_for_benchmark <- function() {
     
 con <- dbConnect(
-    RPostgres::Postgres(),
-    dbname   = "neondb",
-    host     = "ep-crimson-forest-ahw3nquq-pooler.c-3.us-east-1.aws.neon.tech",  # Neon gives you this
-    port     = 5432,
-    user     = "neondb_owner",
-    password = "npg_gW6jAT5xvnbc",
-    sslmode  = "require"   # Neon requires SSL
-    )
+  RPostgres::Postgres(),
+  host = Sys.getenv("DB_HOST"),
+  dbname = Sys.getenv("DB_NAME"),
+  user = Sys.getenv("DB_USER"),
+  password = Sys.getenv("DB_PASSWORD"),
+  port = as.integer(Sys.getenv("DB_PORT")),
+  sslmode = Sys.getenv("DB_SSLMODE")
+)
 
 query <- ('SELECT
     *
@@ -77,14 +77,14 @@ return(team_batting_df)
 team_pitching_data_for_benchmark <- function() {
 
 con <- dbConnect(
-    RPostgres::Postgres(),
-    dbname   = "neondb",
-    host     = "ep-crimson-forest-ahw3nquq-pooler.c-3.us-east-1.aws.neon.tech",  # Neon gives you this
-    port     = 5432,
-    user     = "neondb_owner",
-    password = "npg_gW6jAT5xvnbc",
-    sslmode  = "require"   # Neon requires SSL
-    )
+  RPostgres::Postgres(),
+  host = Sys.getenv("DB_HOST"),
+  dbname = Sys.getenv("DB_NAME"),
+  user = Sys.getenv("DB_USER"),
+  password = Sys.getenv("DB_PASSWORD"),
+  port = as.integer(Sys.getenv("DB_PORT")),
+  sslmode = Sys.getenv("DB_SSLMODE")
+)
 
 query <- ('SELECT
     *
@@ -103,14 +103,14 @@ return(team_pitching_df)
 pitcher_data <- function() {
 
 con <- dbConnect(
-    RPostgres::Postgres(),
-    dbname   = "neondb",
-    host     = "ep-crimson-forest-ahw3nquq-pooler.c-3.us-east-1.aws.neon.tech",  # Neon gives you this
-    port     = 5432,
-    user     = "neondb_owner",
-    password = "npg_gW6jAT5xvnbc",
-    sslmode  = "require"   # Neon requires SSL
-    )
+  RPostgres::Postgres(),
+  host = Sys.getenv("DB_HOST"),
+  dbname = Sys.getenv("DB_NAME"),
+  user = Sys.getenv("DB_USER"),
+  password = Sys.getenv("DB_PASSWORD"),
+  port = as.integer(Sys.getenv("DB_PORT")),
+  sslmode = Sys.getenv("DB_SSLMODE")
+)
 
 query <- ('select *
 from active_pitcher_stats
@@ -127,14 +127,14 @@ return(pitcher_df)
 starting_pitcher_recent_form_data <- function() {
 
 con <- dbConnect(
-    RPostgres::Postgres(),
-    dbname   = "neondb",
-    host     = "ep-crimson-forest-ahw3nquq-pooler.c-3.us-east-1.aws.neon.tech",  # Neon gives you this
-    port     = 5432,
-    user     = "neondb_owner",
-    password = "npg_gW6jAT5xvnbc",
-    sslmode  = "require"   # Neon requires SSL
-    )
+  RPostgres::Postgres(),
+  host = Sys.getenv("DB_HOST"),
+  dbname = Sys.getenv("DB_NAME"),
+  user = Sys.getenv("DB_USER"),
+  password = Sys.getenv("DB_PASSWORD"),
+  port = as.integer(Sys.getenv("DB_PORT")),
+  sslmode = Sys.getenv("DB_SSLMODE")
+)
 
 query <- ('select
   *
@@ -151,14 +151,14 @@ return(starting_pitcher_recent_form_df)
 team_batting_data <- function() {
     
 con <- dbConnect(
-    RPostgres::Postgres(),
-    dbname   = "neondb",
-    host     = "ep-crimson-forest-ahw3nquq-pooler.c-3.us-east-1.aws.neon.tech",  # Neon gives you this
-    port     = 5432,
-    user     = "neondb_owner",
-    password = "npg_gW6jAT5xvnbc",
-    sslmode  = "require"   # Neon requires SSL
-    )
+  RPostgres::Postgres(),
+  host = Sys.getenv("DB_HOST"),
+  dbname = Sys.getenv("DB_NAME"),
+  user = Sys.getenv("DB_USER"),
+  password = Sys.getenv("DB_PASSWORD"),
+  port = as.integer(Sys.getenv("DB_PORT")),
+  sslmode = Sys.getenv("DB_SSLMODE")
+)
 
 query <- ('select
     *
@@ -176,14 +176,14 @@ return(team_batting_df)
 team_pitching_data <- function() {
     
 con <- dbConnect(
-    RPostgres::Postgres(),
-    dbname   = "neondb",
-    host     = "ep-crimson-forest-ahw3nquq-pooler.c-3.us-east-1.aws.neon.tech",  # Neon gives you this
-    port     = 5432,
-    user     = "neondb_owner",
-    password = "npg_gW6jAT5xvnbc",
-    sslmode  = "require"   # Neon requires SSL
-    )
+  RPostgres::Postgres(),
+  host = Sys.getenv("DB_HOST"),
+  dbname = Sys.getenv("DB_NAME"),
+  user = Sys.getenv("DB_USER"),
+  password = Sys.getenv("DB_PASSWORD"),
+  port = as.integer(Sys.getenv("DB_PORT")),
+  sslmode = Sys.getenv("DB_SSLMODE")
+)
 
 query <- ('select
     *
@@ -201,14 +201,14 @@ return(team_pitching_df)
 batter_data <- function() {
     
 con <- dbConnect(
-    RPostgres::Postgres(),
-    dbname   = "neondb",
-    host     = "ep-crimson-forest-ahw3nquq-pooler.c-3.us-east-1.aws.neon.tech",  # Neon gives you this
-    port     = 5432,
-    user     = "neondb_owner",
-    password = "npg_gW6jAT5xvnbc",
-    sslmode  = "require"   # Neon requires SSL
-    )
+  RPostgres::Postgres(),
+  host = Sys.getenv("DB_HOST"),
+  dbname = Sys.getenv("DB_NAME"),
+  user = Sys.getenv("DB_USER"),
+  password = Sys.getenv("DB_PASSWORD"),
+  port = as.integer(Sys.getenv("DB_PORT")),
+  sslmode = Sys.getenv("DB_SSLMODE")
+)
 
 query <- ('select
     *
@@ -227,14 +227,14 @@ return(batter_stats_data)
 batting_splits_data <- function() {
     
 con <- dbConnect(
-    RPostgres::Postgres(),
-    dbname   = "neondb",
-    host     = "ep-crimson-forest-ahw3nquq-pooler.c-3.us-east-1.aws.neon.tech",  # Neon gives you this
-    port     = 5432,
-    user     = "neondb_owner",
-    password = "npg_gW6jAT5xvnbc",
-    sslmode  = "require"   # Neon requires SSL
-    )
+  RPostgres::Postgres(),
+  host = Sys.getenv("DB_HOST"),
+  dbname = Sys.getenv("DB_NAME"),
+  user = Sys.getenv("DB_USER"),
+  password = Sys.getenv("DB_PASSWORD"),
+  port = as.integer(Sys.getenv("DB_PORT")),
+  sslmode = Sys.getenv("DB_SSLMODE")
+)
 
 query <- ('select
     "playerName",
@@ -258,14 +258,14 @@ return(batting_splits_data)
 team_travel_data <- function() {
 
 con <- dbConnect(
-    RPostgres::Postgres(),
-    dbname   = "neondb",
-    host     = "ep-crimson-forest-ahw3nquq-pooler.c-3.us-east-1.aws.neon.tech",  # Neon gives you this
-    port     = 5432,
-    user     = "neondb_owner",
-    password = "npg_gW6jAT5xvnbc",
-    sslmode  = "require"   # Neon requires SSL
-    )
+  RPostgres::Postgres(),
+  host = Sys.getenv("DB_HOST"),
+  dbname = Sys.getenv("DB_NAME"),
+  user = Sys.getenv("DB_USER"),
+  password = Sys.getenv("DB_PASSWORD"),
+  port = as.integer(Sys.getenv("DB_PORT")),
+  sslmode = Sys.getenv("DB_SSLMODE")
+)
 
 query <- ('select
   *
@@ -282,14 +282,14 @@ return(team_travel_df)
 historical_team_batting_data <- function() {
     
 con <- dbConnect(
-    RPostgres::Postgres(),
-    dbname   = "neondb",
-    host     = "ep-crimson-forest-ahw3nquq-pooler.c-3.us-east-1.aws.neon.tech",  # Neon gives you this
-    port     = 5432,
-    user     = "neondb_owner",
-    password = "npg_gW6jAT5xvnbc",
-    sslmode  = "require"   # Neon requires SSL
-    )
+  RPostgres::Postgres(),
+  host = Sys.getenv("DB_HOST"),
+  dbname = Sys.getenv("DB_NAME"),
+  user = Sys.getenv("DB_USER"),
+  password = Sys.getenv("DB_PASSWORD"),
+  port = as.integer(Sys.getenv("DB_PORT")),
+  sslmode = Sys.getenv("DB_SSLMODE")
+)
 
 query <- ('select
     *
@@ -307,14 +307,14 @@ return(team_batting_df)
 historical_team_pitching_data <- function() {
     
 con <- dbConnect(
-    RPostgres::Postgres(),
-    dbname   = "neondb",
-    host     = "ep-crimson-forest-ahw3nquq-pooler.c-3.us-east-1.aws.neon.tech",  # Neon gives you this
-    port     = 5432,
-    user     = "neondb_owner",
-    password = "npg_gW6jAT5xvnbc",
-    sslmode  = "require"   # Neon requires SSL
-    )
+  RPostgres::Postgres(),
+  host = Sys.getenv("DB_HOST"),
+  dbname = Sys.getenv("DB_NAME"),
+  user = Sys.getenv("DB_USER"),
+  password = Sys.getenv("DB_PASSWORD"),
+  port = as.integer(Sys.getenv("DB_PORT")),
+  sslmode = Sys.getenv("DB_SSLMODE")
+)
 
 query <- ('select
     *
