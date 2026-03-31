@@ -69,123 +69,123 @@ team_colors <- list(
 
 team_stadiums <- list(
     "Arizona Diamondbacks" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/chase11965.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/chase11964.jpg"
+        day  = "mlb_team_stadiums/Arizona_Diamondbacks_Day.png",
+        night = "mlb_team_stadiums/Arizona_Diamondbacks_Night.png"
     ),
     "Atlanta Braves" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/04/truist21main2-scaled.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/04/truist21960-scaled.jpg"
+        day  = "mlb_team_stadiums/Atlanta_Braves_Day.png",
+        night = "mlb_team_stadiums/Atlanta_Braves_Night.png"
     ),
     "Baltimore Orioles" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/02/camden09972.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/02/camden09951.jpg"
+        day  = "mlb_team_stadiums/Baltimore_Orioles_Day.png",
+        night = "mlb_team_stadiums/Baltimore_Orioles_Night.png"
     ),
     "Boston Red Sox" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/fenway15955.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/fenway13955.jpg"
+        day  = "mlb_team_stadiums/Boston_Red_Sox_Day.png",
+        night = "mlb_team_stadiums/Boston_Red_Sox_Night.png"
     ),
     "Chicago White Sox" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/uscell1867.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/uscell1861.jpg"
+        day  = "mlb_team_stadiums/Chicago_White_Sox_Day.png",
+        night = "mlb_team_stadiums/Chicago_White_Sox_Night.png"
     ),
     "Chicago Cubs" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/wrig23main.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/wrig10968.jpg"
+        day  = "mlb_team_stadiums/Chicago_Cubs_Day.png",
+        night = "mlb_team_stadiums/Chicago_Cubs_Night.png"
     ),
     "Cincinnati Reds" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/gab23main.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/gab11961.jpg"
+        day  = "mlb_team_stadiums/Cincinnati_Reds_Day.png",
+        night = "mlb_team_stadiums/Cincinnati_Reds_Night.png"
     ),
     "Cleveland Guardians" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/prog16951.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/prog10978.jpg"
+        day  = "mlb_team_stadiums/Cleveland_Guardians_Day.png",
+        night = "mlb_team_stadiums/Cleveland_Guardians_Night.png"
     ),
     "Colorado Rockies" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/coors23main.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/coors23main.jpg"
+        day  = "mlb_team_stadiums/Colorado_Rockies_Day.png",
+        night = "mlb_team_stadiums/Colorado_Rockies_Night.png"
     ),
     "Detroit Tigers" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/com11950.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/com119501.jpg"
+        day  = "mlb_team_stadiums/Detroit_Tigers_Day.png",
+        night = "mlb_team_stadiums/Detroit_Tigers_Night.png"
     ),
     "Houston Astros" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/minute-top.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/minute13970.jpg"
+        day  = "mlb_team_stadiums/Houston_Astros_Day.png",
+        night = "mlb_team_stadiums/Houston_Astros_Night.png"
     ),
     "Kansas City Royals" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/kauff15952.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/kauff906.jpg"
+        day  = "mlb_team_stadiums/Kansas_City_Royals_Day.png",
+        night = "mlb_team_stadiums/Kansas_City_Royals_Night.png"
     ),
     "Los Angeles Angels" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/02/angel15955.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/02/angel13957.jpg"
+        day  = "mlb_team_stadiums/Los_Angeles_Angels_Day.png",
+        night = "mlb_team_stadiums/Los_Angeles_Angels_Night.png"
     ),
     "Los Angeles Dodgers" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/dodger16_top3.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/dodger15952.jpg"
+        day  = "mlb_team_stadiums/Los_Angeles_Dodgers_Day.png",
+        night = "mlb_team_stadiums/Los_Angeles_Dodgers_Night.png"
     ),
     "Miami Marlins" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/marlins_topv2.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/marlins2012971.jpg"
+        day  = "mlb_team_stadiums/Miami_Marlins_Day.png",
+        night = "mlb_team_stadiums/Miami_Marlins_Night.png"
     ),
     "Milwaukee Brewers" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/aff21953.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/miller1770.jpg"
+        day  = "mlb_team_stadiums/Milwaukee_Brewers_Day.png",
+        night = "mlb_team_stadiums/Milwaukee_Brewers_Night.png"
     ),
     "Minnesota Twins" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/target23main.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/target1616.jpg"
+        day  = "mlb_team_stadiums/Minnesota_Twins_Day.png",
+        night = "mlb_team_stadiums/Minnesota_Twins_Night.png"
     ),
     "New York Yankees" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/yank10950.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/yank10970.jpg"
+        day  = "mlb_team_stadiums/New_York_Yankees_Day.png",
+        night = "mlb_team_stadiums/New_York_Yankees_Night.png"
     ),
     "New York Mets" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/citi17951.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/citi10955.jpg"
+        day  = "mlb_team_stadiums/New_York_Mets_Day.png",
+        night = "mlb_team_stadiums/New_York_Mets_Night.png"
     ),
     "Athletics" = list(
-        day  = "https://img.mlbstatic.com/mlb-images/image/upload/t_16x9/t_w1536/mlb/dhhjx4ihxu1qblvfilfx.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2024/12/sutter25951.jpg"
+        day  = "mlb_team_stadiums/Athletics_Day.png",
+        night = "mlb_team_stadiums/Athletics_Night.png"
     ),
     "Philadelphia Phillies" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/citbank958.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/citbank_topv2.jpg"
+        day  = "mlb_team_stadiums/Philadelphia_Phillies_Day.png",
+        night = "mlb_team_stadiums/Philadelphia_Phillies_Night.png"
     ),
     "Pittsburgh Pirates" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/pnc10855.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/pnc_topv2.jpg"
+        day  = "mlb_team_stadiums/Pittsburgh_Pirates_Day.png",
+        night = "mlb_team_stadiums/Pittsburgh_Pirates_Night.png"
     ),
     "San Diego Padres" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/petco17markwhitt.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/petco2007901.jpg"
+        day  = "mlb_team_stadiums/San_Diego_Padres_Day.png",
+        night = "mlb_team_stadiums/San_Diego_Padres_Night.png"
     ),
     "San Francisco Giants" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/att17952.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/att2012998.jpg"
+        day  = "mlb_team_stadiums/San_Francisco_Giants_Day.png",
+        night = "mlb_team_stadiums/San_Francisco_Giants_Night.png"
     ),
     "Seattle Mariners" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/tmobile23main.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/safeco11951.jpg"
+        day  = "mlb_team_stadiums/Seattle_Mariners_Day.png",
+        night = "mlb_team_stadiums/Seattle_Mariners_Night.png"
     ),
     "St. Louis Cardinals" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/busch913.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/busch17951.jpg"
+        day  = "mlb_team_stadiums/St._Louis_Cardinals_Day.png",
+        night = "mlb_team_stadiums/St._Louis_Cardinals_Night.png"
     ),
     "Tampa Bay Rays" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/trop2012962.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/trop2012963.jpg"
+        day  = "mlb_team_stadiums/Tampa_Bay_Rays_Day.png",
+        night = "mlb_team_stadiums/Tampa_Bay_Rays_Night.png"
     ),
     "Texas Rangers" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/06/globe21950-1.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/06/globe21953.jpg"
+        day  = "mlb_team_stadiums/Texas_Rangers_Day.png",
+        night = "mlb_team_stadiums/Texas_Rangers_Night.png"
     ),
     "Toronto Blue Jays" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/rogers14954.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/davezolis3.jpg"
+        day  = "mlb_team_stadiums/Toronto_Blue_Jays_Day.png",
+        night = "mlb_team_stadiums/Toronto_Blue_Jays_Night.png"
     ),
     "Washington Nationals" = list(
-        day  = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/nats23950.jpg",
-        night = "https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/nats15959.jpg"
+        day  = "mlb_team_stadiums/Washington_Nationals_Day.png",
+        night = "mlb_team_stadiums/Washington_Nationals_Night.png"
     )
 )
