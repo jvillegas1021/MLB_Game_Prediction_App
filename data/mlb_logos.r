@@ -26,7 +26,7 @@ team_logos <- list(
   "San Diego Padres" = "mlb_team_logos/San_Diego_Padres.png",
   "San Francisco Giants" = "mlb_team_logos/San_Francisco_Giants.png",
   "Seattle Mariners" = "mlb_team_logos/Seattle_Mariners.png",
-  "St. Louis Cardinals" = "mlb_team_logos/St_Louis_Cardinals.png",
+  "St. Louis Cardinals" = "mlb_team_logos/St._Louis_Cardinals.png",
   "Tampa Bay Rays" = "mlb_team_logos/Tampa_Bay_Rays.png",
   "Texas Rangers" = "mlb_team_logos/Texas_Rangers.png",
   "Toronto Blue Jays" = "mlb_team_logos/Toronto_Blue_Jays.png",
