@@ -289,7 +289,7 @@ mutate(
   )
 
 matchup_df <- matchup_df %>%
-mutate(Score_Difference = round(abs(matchup_df$Home_Total_Score - matchup_df$Away_Total_Score), 4)
+mutate(Score_Difference = round(abs(matchup_df$Home_Total_Score - matchup_df$Away_Total_Score), 4) * 0.5
        )
 
 ################################### Calculate win prob ####################################
