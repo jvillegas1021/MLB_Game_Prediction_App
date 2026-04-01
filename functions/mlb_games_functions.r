@@ -246,15 +246,17 @@ starting_pitcher_season_scores <- function(starting_pitcher_season_df,
         points <- numeric(length(pitcher_stat_value))
         
         if (high_low == "low") {
+            points[pitcher_stat_value > max_stat]      <- 0.0
             points[pitcher_stat_value < max_stat]      <- 0.25
             points[pitcher_stat_value < third_q_stat]  <- 0.50
             points[pitcher_stat_value < second_q_stat] <- 0.75
             points[pitcher_stat_value < first_q_stat]  <- 1.00
         } else {
-            points[pitcher_stat_value > third_q_stat]  <- 1.00
-            points[pitcher_stat_value > second_q_stat] <- 0.75
-            points[pitcher_stat_value > first_q_stat]  <- 0.50
+            points[pitcher_stat_value < min_stat]      <- 0.0
             points[pitcher_stat_value > min_stat]      <- 0.25
+            points[pitcher_stat_value > first_q_stat]  <- 0.50
+            points[pitcher_stat_value > second_q_stat] <- 0.75
+            points[pitcher_stat_value > third_q_stat]  <- 1.00
         }
 
 
@@ -292,15 +294,17 @@ starting_pitcher_recent_scores <- function(starting_pitcher_recent_form_df,
         pitcher_stat_value <- starting_pitcher_recent_form_df[[stat]]
         points <- numeric(length(pitcher_stat_value))
         if (high_low == "low") {
-          points[pitcher_stat_value < third_q_stat]   <- 1
-          points[pitcher_stat_value < second_q_stat] <- 0.75
-          points[pitcher_stat_value < first_q_stat] <- 0.5
-          points[pitcher_stat_value < min_stat]   <- 0.25
+            points[pitcher_stat_value > max_stat]      <- 0.0
+            points[pitcher_stat_value < max_stat]      <- 0.25
+            points[pitcher_stat_value < third_q_stat]  <- 0.50
+            points[pitcher_stat_value < second_q_stat] <- 0.75
+            points[pitcher_stat_value < first_q_stat]  <- 1.00
         } else {
-          points[pitcher_stat_value > third_q_stat]   <- 1
-          points[pitcher_stat_value > second_q_stat] <- 0.75
-          points[pitcher_stat_value > first_q_stat] <- 0.5
-          points[pitcher_stat_value > min_stat]   <- 0.25
+            points[pitcher_stat_value < min_stat]      <- 0.0
+            points[pitcher_stat_value > min_stat]      <- 0.25
+            points[pitcher_stat_value > first_q_stat]  <- 0.50
+            points[pitcher_stat_value > second_q_stat] <- 0.75
+            points[pitcher_stat_value > third_q_stat]  <- 1.00
         }
 
         recent_score_table[[stat]] <- points * scale_points
@@ -377,16 +381,17 @@ team_batting_scores <- function(team_batting_df, benchmark_df, label) {
         points <- numeric(length(team_batting_stat_value))
         
         if (high_low == "low") {
-            # start at 0 by default
-            points[team_batting_stat_value < max_stat]       <- 0.25
-            points[team_batting_stat_value < third_q_stat]   <- 0.50
-            points[team_batting_stat_value < second_q_stat]  <- 0.75
-            points[team_batting_stat_value < first_q_stat]   <- 1.00
+            points[team_batting_stat_value > max_stat]      <- 0.0
+            points[team_batting_stat_value < max_stat]      <- 0.25
+            points[team_batting_stat_value < third_q_stat]  <- 0.50
+            points[team_batting_stat_value < second_q_stat] <- 0.75
+            points[team_batting_stat_value < first_q_stat]  <- 1.00
         } else {
-            points[team_batting_stat_value > third_q_stat]   <- 1
-            points[team_batting_stat_value > second_q_stat]  <- 0.75
-            points[team_batting_stat_value > first_q_stat]   <- 0.5
-            points[team_batting_stat_value > min_stat]       <- 0.25
+            points[team_batting_stat_value < min_stat]      <- 0.0
+            points[team_batting_stat_value > min_stat]      <- 0.25
+            points[team_batting_stat_value > first_q_stat]  <- 0.50
+            points[team_batting_stat_value > second_q_stat] <- 0.75
+            points[team_batting_stat_value > third_q_stat]  <- 1.00
         }
         
         score_table[[stat]] <- points * scale_points
@@ -417,15 +422,17 @@ team_batting_scores_historical <- function(team_batting_df, benchmark_df, label)
         team_batting_stat_value <- team_batting_df[[stat]]
         points <- numeric(length(team_batting_stat_value))
         if (high_low == "low") {
-          points[team_batting_stat_value < third_q_stat]   <- 1
-          points[team_batting_stat_value < second_q_stat] <- 0.75
-          points[team_batting_stat_value < first_q_stat] <- 0.5
-          points[team_batting_stat_value < min_stat]   <- 0.25
+            points[team_batting_stat_value > max_stat]      <- 0.0
+            points[team_batting_stat_value < max_stat]      <- 0.25
+            points[team_batting_stat_value < third_q_stat]  <- 0.50
+            points[team_batting_stat_value < second_q_stat] <- 0.75
+            points[team_batting_stat_value < first_q_stat]  <- 1.00
         } else {
-          points[team_batting_stat_value > third_q_stat]   <- 1
-          points[team_batting_stat_value > second_q_stat] <- 0.75
-          points[team_batting_stat_value > first_q_stat] <- 0.5
-          points[team_batting_stat_value > min_stat]   <- 0.25
+            points[team_batting_stat_value < min_stat]      <- 0.0
+            points[team_batting_stat_value > min_stat]      <- 0.25
+            points[team_batting_stat_value > first_q_stat]  <- 0.50
+            points[team_batting_stat_value > second_q_stat] <- 0.75
+            points[team_batting_stat_value > third_q_stat]  <- 1.00
         }
 
         score_table[[stat]] <- points * scale_points
@@ -455,15 +462,17 @@ team_pitching_scores <- function(team_pitching_df, benchmark_df, label) {
         team_pitching_stat_value <- team_pitching_df[[stat]]
         points <- numeric(length(team_pitching_stat_value))
         if (high_low == "low") {
-          points[team_pitching_stat_value < third_q_stat]   <- 1
-          points[team_pitching_stat_value < second_q_stat] <- 0.75
-          points[team_pitching_stat_value < first_q_stat] <- 0.5
-          points[team_pitching_stat_value < min_stat]   <- 0.25
+            points[team_pitching_stat_value > max_stat]      <- 0.0
+            points[team_pitching_stat_value < max_stat]      <- 0.25
+            points[team_pitching_stat_value < third_q_stat]  <- 0.50
+            points[team_pitching_stat_value < second_q_stat] <- 0.75
+            points[team_pitching_stat_value < first_q_stat]  <- 1.00
         } else {
-          points[team_pitching_stat_value > third_q_stat]   <- 1
-          points[team_pitching_stat_value > second_q_stat] <- 0.75
-          points[team_pitching_stat_value > first_q_stat] <- 0.5
-          points[team_pitching_stat_value > min_stat]   <- 0.25
+            points[team_pitching_stat_value < min_stat]      <- 0.0
+            points[team_pitching_stat_value > min_stat]      <- 0.25
+            points[team_pitching_stat_value > first_q_stat]  <- 0.50
+            points[team_pitching_stat_value > second_q_stat] <- 0.75
+            points[team_pitching_stat_value > third_q_stat]  <- 1.00
         }
 
         score_table[[stat]] <- points * scale_points
@@ -494,15 +503,17 @@ team_pitching_scores_historical <- function(team_pitching_df, benchmark_df, labe
         team_pitching_stat_value <- team_pitching_df[[stat]]
         points <- numeric(length(team_pitching_stat_value))
         if (high_low == "low") {
-          points[team_pitching_stat_value < third_q_stat]   <- 1
-          points[team_pitching_stat_value < second_q_stat] <- 0.75
-          points[team_pitching_stat_value < first_q_stat] <- 0.5
-          points[team_pitching_stat_value < min_stat]   <- 0.25
+            points[team_pitching_stat_value > max_stat]      <- 0.0
+            points[team_pitching_stat_value < max_stat]      <- 0.25
+            points[team_pitching_stat_value < third_q_stat]  <- 0.50
+            points[team_pitching_stat_value < second_q_stat] <- 0.75
+            points[team_pitching_stat_value < first_q_stat]  <- 1.00
         } else {
-          points[team_pitching_stat_value > third_q_stat]   <- 1
-          points[team_pitching_stat_value > second_q_stat] <- 0.75
-          points[team_pitching_stat_value > first_q_stat] <- 0.5
-          points[team_pitching_stat_value > min_stat]   <- 0.25
+            points[team_pitching_stat_value < min_stat]      <- 0.0
+            points[team_pitching_stat_value > min_stat]      <- 0.25
+            points[team_pitching_stat_value > first_q_stat]  <- 0.50
+            points[team_pitching_stat_value > second_q_stat] <- 0.75
+            points[team_pitching_stat_value > third_q_stat]  <- 1.00
         }
 
         score_table[[stat]] <- points * scale_points
