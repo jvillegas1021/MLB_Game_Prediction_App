@@ -4,6 +4,8 @@ This Shiny application generates daily MLB matchup predictions using a structure
 
 Because the database requires private credentials, the app cannot be run without the appropriate environment variables. The code is provided for demonstration of architecture, modeling logic, and data engineering practices.
 
+Link to the web app is here :  https://jvillegas1021.shinyapps.io/MLB_Games_Prediction/
+
 How the App Works
 1. Daily Game Retrieval
 The app begins by pulling the full MLB schedule for the current date through an external API. Each game is displayed as a matchup card within the Shiny interface.
