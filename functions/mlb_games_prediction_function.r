@@ -1,7 +1,7 @@
 
 ################### MLB GAMES ############################
                        
-mlb_games <- function(game_date = Sys.Date()) {
+mlb_games <- function(game_date = as.Date(format(Sys.time(), tz = "America/New_York"))) {
 # grab games
 url <- paste0("https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=", game_date, "&hydrate=probablePitcher(note)")
 games_df <- GET(url)
